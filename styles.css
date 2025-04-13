@@ -1,0 +1,172 @@
+/* Reset default styles and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles with system font stack and centering */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Main card container with flex layout */
+.card {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 800px;
+  max-width: 90%;
+}
+
+/* Left section styles with dark blue background */
+.left-section {
+  background-color: #1a237e;
+  color: white;
+  padding: 2rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Profile image container with circular shape and gold border */
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffd700;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile image fitting styles */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name heading styles */
+.name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Job title styles */
+.title {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+/* Company name styles */
+.company {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Right section styles */
+.right-section {
+  padding: 2rem;
+  width: 65%;
+}
+
+/* Bio text styles */
+.description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Contact information styles */
+.contact-info {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Social links container */
+.social-links {
+  margin-bottom: 1.5rem;
+}
+
+/* Individual social link styles */
+.social-link {
+  color: #1a237e;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Social link hover effect */
+.social-link:hover {
+  color: #303f9f;
+}
+
+/* Skills container with flex layout */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual skill tag styles */
+.skill-tag {
+  background-color: #ffd700;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* View profile button styles */
+.view-profile {
+  background-color: #1b76d8;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 70%;
+}
+
+/* View profile button hover effect */
+.view-profile:hover {
+  background-color: #c2185b;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  /* Stack card sections vertically */
+  .card {
+    flex-direction: column;
+  }
+
+  /* Full width sections on mobile */
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  /* Smaller profile image on mobile */
+  .profile-image-container {
+    width: 120px;
+    height: 120px;
+  }
+}
